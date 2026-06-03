@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="it"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Taboo Didattico Challenge&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>:root {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--storia: #d90429;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--grammatica: #0077b6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--scuola: #f77f00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--sport: #38b000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--geografia: #7209b7;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--dark: #2b2d42;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--light: #edf2f4;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f4f6f9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--dark);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.game-title {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 2.2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 800;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: -1px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 10px 0 5px 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--dark);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.subtitle {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #6c757d;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.panel {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 30px rgba(0,0,0,0.08);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 450px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.form-group {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: left;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>label {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #495057;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>select {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 12px 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 2px solid #ced4da;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>outline: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 600;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: var(--dark);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 14px 28px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: all 0.2s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 0.5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 15px rgba(0,0,0,0.15);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>#gameArea {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 400px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.timer-badge {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 8px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 800;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.4rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #d90429;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 10px rgba(0,0,0,0.05);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 2px solid #eee;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 15px 35px rgba(0,0,0,0.12);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 8px solid transparent;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: border-color 0.3s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 1.5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 0.85rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 30px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.main-word {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 2.2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 800;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--dark);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: -0.5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding-bottom: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 2px dashed #e9ecef;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.taboo-label {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 0.75rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #adb5bd;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 2px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.taboo-box {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>list-style: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.taboo-box li {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.25rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #d90429;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 10px 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #fff3f5;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 0.5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.controls-grid {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn-secondary { background-color: #6c757d; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn-success { background-color: #38b000; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-storia { border-color: var(--storia); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-storia .card-header { background-color: var(--storia); }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-grammatica { border-color: var(--grammatica); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-grammatica .card-header { background-color: var(--grammatica); }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-scuola { border-color: var(--scuola); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-scuola .card-header { background-color: var(--scuola); color: #000; }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-sport { border-color: var(--sport); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-sport .card-header { background-color: var(--sport); }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-geografia { border-color: var(--geografia); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.theme-geografia .card-header { background-color: var(--geografia); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="game-title"&gt;Taboo Didattico&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="subtitle"&gt;Spiega la parola ai tuoi compagni senza farti scoprire!&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="panel" id="setupPanel"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="category"&gt;Materia di Studio&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;select id="category"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="all"&gt;Tutte le materie mescolate&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="storia"&gt;🏰 Storia Medievale&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="grammatica"&gt;📝 Grammatica Italiana&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="scuola"&gt;🎒 Lessico della Scuola&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="sport"&gt;⚽ Attività Motoria &amp; Sport&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="geografia"&gt;🏔️ Geografia Fisica&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="timerSet"&gt;Tempo di Risoluzione&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;select id="timerSet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="60"&gt;60 Secondi&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="90"&gt;90 Secondi&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="120"&gt;120 Secondi&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="0"&gt;Senza Timer&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="btn" onclick="avviaPartita()"&gt;Genera Mazzo e Gioca&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="gameArea"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="timer-badge" id="timerContainer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>⏱️ &lt;span id="timerDisplay"&gt;60&lt;/span&gt;s</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card" id="activeCard"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="card-header" id="currentSubject"&gt;Materia&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="card-body"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="main-word" id="targetWord"&gt;PAROLA&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="taboo-label"&gt;Parole Proibite&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;ul class="taboo-box" id="forbiddenList"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Caricamento...&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="controls-grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="btn btn-secondary" onclick="ritornaAlMenu()"&gt;Abbandona&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="btn btn-success" onclick="avanzaMazzo()"&gt;Indovinata / Salta →&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const carteTaboo = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// STORIA MEDIEVALE</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Feudalesimo', forbidden: ['Castello', 'Vassallo', 'Medioevo', 'Terra', 'Re'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Crociata', forbidden: ['Guerra', 'Santa', 'Gerusalemme', 'Papa', 'Cavalieri'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Cavaliere', forbidden: ['Armatura', 'Cavallo', 'Spada', 'Torneo', 'Nobile'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Monastero', forbidden: ['Monaco', 'Abbazia', 'Ammanuense', 'Preghiera', 'Chiostro'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Vassallo', forbidden: ['Beneficio', 'Feudo', 'Omaggio', 'Fedeltà', 'Signore'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Peste', forbidden: ['Malattia', 'Topi', 'Contagio', 'Nero', 'Epidemia'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Comune', forbidden: ['Città', 'Podestà', 'Italia', 'Autonomia', 'Borghesia'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Imperatore', forbidden: ['Barbarossa', 'Sacro', 'Romano', 'Impero', 'Corona'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Castello', forbidden: ['Mura', 'Torre', 'Fossato', 'Difesa', 'Ponte levatoio'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'storia', label: 'Storia Medievale', word: 'Corporazione', forbidden: ['Mestiere', 'Arti', 'Mercanti', 'Bottega', 'Associazione'] },</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// GRAMMATICA</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Gerundio', forbidden: ['Modo', 'Tempo', '-ando', '-endo', 'Verbo'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Superlativo', forbidden: ['Assoluto', 'Relativo', '-issimo', 'Molto', 'Aggettivo'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Qualificativo', forbidden: ['Aggettivo', 'Nome', 'Caratteristica', 'Bello', 'Descrivere'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Riflessivo', forbidden: ['Verbo', 'Se stesso', 'Pronome', 'Mi', 'Azione'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Possessivo', forbidden: ['Mio', 'Tuo', 'Proprietà', 'Aggettivo', 'Pronome'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Ausiliare', forbidden: ['Essere', 'Avere', 'Verbo', 'Tempo composto', 'Aiuto'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Dimostrativo', forbidden: ['Questo', 'Quello', 'Vicino', 'Lontano', 'Indicare'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Transitivo', forbidden: ['Oggetto diretto', 'Chi?', 'Che cosa?', 'Verbo', 'Azione'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Indefinito', forbidden: ['Qualche', 'Nessuno', 'Quantità', 'Preciso', 'Pronome'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'grammatica', label: 'Grammatica', word: 'Participio', forbidden: ['Passato', 'Presente', 'Verbo', 'Stato', '-ato/-uto/-ito'] },</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// LESSICO DELLA SCUOLA</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Registro', forbidden: ['Elettronico', 'Voti', 'Appello', 'Assenze', 'Docente'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Intervallo', forbidden: ['Ricreazione', 'Campana', 'Pausa', 'Merenda', 'Compagni'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Compito', forbidden: ['Casa', 'Classe', 'Esercizio', 'Verifica', 'Quaderno'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Cattedra', forbidden: ['Insegnante', 'Banco', 'Scuola', 'Aula', 'Prof'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Pagella', forbidden: ['Voti', 'Fine anno', 'Quadrimestre', 'Valutazione', 'Scuola'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Lavagna', forbidden: ['Gesso', 'Pennarello', 'LIM', 'Cancellino', 'Scrivere'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Astuccio', forbidden: ['Penne', 'Matite', 'Gomma', 'Colori', 'Cerniera'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Circolare', forbidden: ['Comunicazione', 'Preside', 'Avviso', 'Genitori', 'Scuola'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Gita', forbidden: ['Viaggio', 'Istruzione', 'Pullman', 'Museo', 'Classe'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'scuola', label: 'Lessico della Scuola', word: 'Bidello', forbidden: ['Collaboratore', 'Pulire', 'Corridoio', 'Scuola', 'Campanella'] },</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// SPORT</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Arbitro', forbidden: ['Fischietto', 'Cartellino', 'Campo', 'Regolamento', 'Gara'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Canestro', forbidden: ['Basket', 'Palla', 'Rete', 'Tabellone', 'Punti'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Fuorigioco', forbidden: ['Calcio', 'Linea', 'Attaccante', 'Passaggio', 'Bandierina'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Staffetta', forbidden: ['Atletica', 'Testimone', 'Corsa', 'Squadra', 'Velocità'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Rete', forbidden: ['Pallavolo', 'Tennis', 'Calcio', 'Mezzo', 'Campo'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Allenamento', forbidden: ['Esercizio', 'Fatica', 'Palestra', 'Preparazione', 'Coach'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Scudetto', forbidden: ['Vincere', 'Campionato', 'Calcio', 'Italia', 'Titolo'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Traguardo', forbidden: ['Fine', 'Corsa', 'Arrivo', 'Linea', 'Striscione'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Olimpiadi', forbidden: ['Cinque cerchi', 'Oro', 'Medaglia', 'Giochi', 'Mondo'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'sport', label: 'Lo Sport', word: 'Rigore', forbidden: ['Dischetto', 'Portiere', 'Calcio', 'Fallo', 'Area'] },</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// GEOGRAFIA FISICA</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Arcipelago', forbidden: ['Isole', 'Mare', 'Gruppo', 'Insieme', 'Sardegna'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Affluente', forbidden: ['Fiume', 'Corso d\'acqua', 'Sbocca', 'Immette', 'Destra'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Altopiano', forbidden: ['Montagna', 'Pianura', 'Quota', 'Alto', 'Livello'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Estuario', forbidden: ['Foce', 'Fiume', 'Mare', 'Imbuto', 'Delta'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Ghiacciaio', forbidden: ['Montagna', 'Neve', 'Freddo', 'Sciogliere', 'Perenne'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Penisola', forbidden: ['Terra', 'Mare', 'Tre lati', 'Italia', 'Stivale'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Dorsale', forbidden: ['Catena', 'Montagne', 'Appennini', 'Oceanica', 'Rilievo'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Golfo', forbidden: ['Costa', 'Mare', 'Baia', 'Insenatura', 'Curva'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Sorgente', forbidden: ['Fiume', 'Nasce', 'Montagna', 'Acqua', 'Inizio'] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ cat: 'geografia', label: 'Geografia Fisica', word: 'Pianura', forbidden: ['Terra', 'Piatta', 'Padana', 'Livello del mare', 'Coltivazione'] }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let mazzoAttivo = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let indiceCorrente = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let timerId = null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let tempoRimanente = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let impostazioneTempo = 60;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function avviaPartita() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const catScelta = document.getElementById('category').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>impostazioneTempo = parseInt(document.getElementById('timerSet').value);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (catScelta === 'all') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>mazzoAttivo = [...carteTaboo];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>mazzoAttivo = carteTaboo.filter(c =&gt; c.cat === catScelta);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>for (let i = mazzoAttivo.length - 1; i &gt; 0; i--) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const j = Math.floor(Math.random() * (i + 1));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>[mazzoAttivo[i], mazzoAttivo[j]] = [mazzoAttivo[j], mazzoAttivo[i]];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>indiceCorrente = 0;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('setupPanel').style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('gameArea').style.display = 'flex';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderizzaCarta();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>avviaTimer();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function renderizzaCarta() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if(indiceCorrente &gt;= mazzoAttivo.length) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>clearInterval(timerId);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>alert("Ottimo lavoro! Avete completato le carte di questa sessione!");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>ritornaAlMenu();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const scheda = mazzoAttivo[indiceCorrente];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const contenitoreCarta = document.getElementById('activeCard');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>contenitoreCarta.className = 'card theme-' + scheda.cat;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('currentSubject').innerText = scheda.label;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('targetWord').innerText = scheda.word;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const listContainer = document.getElementById('forbiddenList');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>listContainer.innerHTML = '';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>scheda.forbidden.forEach(parolaProibita =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const elementoLista = document.createElement('li');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>elementoLista.innerText = parolaProibita;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>listContainer.appendChild(elementoLista);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function avanzaMazzo() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>indiceCorrente++;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderizzaCarta();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if(impostazioneTempo &gt; 0) {<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>avviaTimer();<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function avviaTimer() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>clearInterval(timerId);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if(impostazioneTempo === 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('timerContainer').style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('timerContainer').style.display = 'flex';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>tempoRimanente = impostazioneTempo;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('timerDisplay').innerText = tempoRimanente;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>timerId = setInterval(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tempoRimanente--;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('timerDisplay').innerText = tempoRimanente;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if(tempoRimanente &lt;= 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>clearInterval(timerId);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>alert("Tempo Scaduto!");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>avanzaMazzo();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 1000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function ritornaAlMenu() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>clearInterval(timerId);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('setupPanel').style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('gameArea').style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
